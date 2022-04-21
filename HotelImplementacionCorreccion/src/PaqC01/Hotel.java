@@ -166,4 +166,21 @@ public class Hotel implements Serializable{
         }
     }
 
+    public Cliente devuelveCliente(String dni){
+
+        if(dni!=null){
+            for(int i=0;i<8;i++) {
+                for (int j = 0; j < 6; j++) {
+                    if (habitaciones[i][j].getDni().equals(dni)) {
+                        return habitaciones[i][j];
+                    }
+                    else return null;
+                }
+            }
+        }
+        else return null;
+
+        return null;
+    }
+
 }
