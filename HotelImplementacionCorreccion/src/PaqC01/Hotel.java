@@ -11,6 +11,7 @@ public class Hotel implements Serializable{
         habitaciones=new Cliente[8][6];
     }
 
+
     public String toString(){
 
         String s="";
